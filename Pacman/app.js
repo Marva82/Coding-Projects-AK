@@ -81,6 +81,9 @@ document.addEventListener('DOMContentLoaded', () =>{
                 ) {
                     pacmanCurrentIndex -= 1
                 }
+                if (squares[pacmanCurrentIndex -1] === squares[363]) {
+                    pacmanCurrentIndex = 391
+                }
                 break
             case 'ArrowRight':
                 pacmanCurrentIndex += 1
